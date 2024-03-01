@@ -1,1 +1,1 @@
-# MERNapp
+# MERN-Stack TechNotes Application 
