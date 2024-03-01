@@ -19,13 +19,14 @@ app.use(logger)
 
 app.use(cors(corsOptions))
 
-app.use(express.json()) //build-in middleware
+app.use(express.json())             //build-in middleware
 
-app.use(cookieParser()) //3rd part middleware
+app.use(cookieParser())             //3rd part middleware
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 
 app.use('/', require('./routes/root'))
+app.use('/users', require('./routes/userRoutes'))
 
 app.all('*', (req, res) => {
     res.status(404)

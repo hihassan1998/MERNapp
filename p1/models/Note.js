@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const AutoIncrement = require('mongoos-sequence')(mongoose)
+const AutoIncrement = require('mongoose-sequence')(mongoose)
 
-const noteSchemaSchema =new mongoose.Schema(
+const noteSchema =new mongoose.Schema(
     {
     user: {
         type: mongoose.Schema.Types.ObjectId,
