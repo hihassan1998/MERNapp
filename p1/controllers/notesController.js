@@ -43,7 +43,7 @@ const createNewNote = asyncHandler(async (req, res) => {
     const duplicate = await Note.findOne({title}).lean().exec()
     
     if (duplicate) {
-        return res.status(400).json({message: 'Duplicate not title'})
+        return res.status(400).json({message: 'Duplicate note title'})
     }
     
     // Create and store the new user
@@ -65,7 +65,7 @@ const updateNote = asyncHandler(async (req,res)=>{
     const {id, user, title, text, completed} = req.body
 
     //Confirm data
-    if (!id || !user || !title || !text || typeof completed !== boolean) {
+    if (!id || !user || !title || !text || typeof completed !== 'boolean') {
         return res.status(400).json({message: 'All fields are required'})
     }
 
