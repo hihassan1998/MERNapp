@@ -1,14 +1,15 @@
 const express = require('express')
 const router = express.Router()
 const authController = require('../controllers/authController')
+const loginLimiter = require('../middleware/loginLimiter')
 
 router.route('/')
-    .post()
+    .post(loginLimiter, authController.login)
 
 router.route('/refresh')
-    .get()
-    
+    .get(authController.refresh)
+
 router.route('/logout')
-    .post()
+    .post(authController.logout)
 
 module.exports = router
