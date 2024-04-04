@@ -1,0 +1,26 @@
+{
+    "id": "6609eb3fb8a88b7bfc51b8af",
+    "username": "Admin001", // Field from the user object
+    "password": "123pwd", // If password is required for updating the note
+    "roles": [
+        "Admin"
+    ], // Field from the user object
+    "title": "Sample Admin Note",
+    "text": "This is a sample admin note text.",
+    "completed": false,
+    "active": true // Field from the user object
+}
+
+{
+        "_id": "65f890362f99673a10ea2cbb",
+        "user": "65e3428f6aee496b7c932444",
+        "title": "Sample Note",
+        "text": "This is a sample note text.",
+        "roles": [],
+        "completed": true,
+        "createdAt": "2024-03-18T19:04:22.165Z",
+        "updatedAt": "2024-03-18T19:04:22.165Z",
+        "ticket": 500,
+        "__v": 0,
+        "username": "Hassan"
+    }

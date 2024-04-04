@@ -101,5 +101,5 @@ const logout = (req, res) => {
 module.exports = {
     login,
     refresh,
-    logout
+    logout,
 }
