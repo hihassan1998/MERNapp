@@ -18,9 +18,9 @@ const Login = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  const [login, { isLoading }] = useLoginMutation() //login func, isLoading state, hook
+  const [login, { isLoading }] = useLoginMutation()
 
-  useEffect(() => {     //empty dependency array- @ component loads
+  useEffect(() => {
     userRef.current.focus()
   }, [])
 
@@ -90,6 +90,7 @@ const Login = () => {
             required
           />
           <button className="form__submit-button">Sign In</button>
+
 
           <label htmlFor="persist" className="form__persist">
             <input
