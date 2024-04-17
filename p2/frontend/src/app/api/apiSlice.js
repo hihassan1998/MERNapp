@@ -2,7 +2,8 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { setCredentials } from '../../features/auth/authSlice'
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'http://localhost:3500',
+    baseUrl: 'http://localhost:3500', for dev production env
+    // baseUrl: 'https://techNotes-api.onrender.com', for launch
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
