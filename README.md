@@ -3,6 +3,11 @@
 
 techNotes is a comprehensive note-taking application designed to streamline communication and task management within your organization. It replaces traditional sticky note systems with a digital solution that offers enhanced features and accessibility. Below are the key functionalities and user stories of techNotes:
 
+## Site Access
+https://technotes-99q4.onrender.com
+
+## Key features:
+
 1. **Replace current sticky note system**
    - techNotes replaces physical sticky notes with a digital platform for efficient note-taking and management.
 
